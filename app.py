@@ -18,7 +18,6 @@ def ensure_model_available():
         with st.spinner(f'Загружаем модель {MODEL_NAME}... Это может занять несколько минут.'):
             ollama.pull(MODEL_NAME)
 
-# Добавьте это в начало после определения MODEL_NAME
 ensure_model_available()
 
 if 'chat' not in st.session_state:
